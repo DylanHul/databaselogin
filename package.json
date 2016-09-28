@@ -1,0 +1,19 @@
+{
+  "name": "databaselogin",
+  "version": "1.0.0",
+  "description": "a login using a database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DylanHul/databaselogin.git"
+  },
+  "author": "dylanhul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DylanHul/databaselogin/issues"
+  },
+  "homepage": "https://github.com/DylanHul/databaselogin#readme"
+}
