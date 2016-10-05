@@ -4,8 +4,8 @@
   "description": "a login using a database",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www",
-    "dev:start": "nodemon ./bin/www",
+    "start": "node ./server_start/start",
+    "dev:start": "nodemon ./server_start/start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
