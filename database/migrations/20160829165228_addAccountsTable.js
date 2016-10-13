@@ -1,12 +1,12 @@
 
 exports.up = (knex, Promise) => {
-  return knex.schema.createTableIfNotExists('accounts', (table) => {
+  return knex.schema.createTableIfNotExists('users', (table) => {
     table.increments('id').primary();
-    table.string('account_name');
+    table.string('user_name');
   })
 
 };
 
 exports.down = (knex, Promise) => {
-  return knex.schema.dropTable('accounts');
+  return knex.schema.dropTable('users');
 };
