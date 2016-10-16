@@ -1,2 +1,25 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
+
+<div class="sign-in-box text-color">
+  <form method="POST" action="/users/sign-in">
+    <fieldset class="sign-in-fieldset">
+      <legend class="sign-in-header">Welcome to the landing page</legend>
+      <br /><br /><br /><br />
+
+      <div class="form-group">
+        <label for="username">User Name</label>
+        <input class="form-control" type="user_name" name="user_name" id="user_name" value='Dylan'>
+      </div><br />
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input class="form-control" type="password" name="password" id="password" value='test3'>
+      </div><br /><br />
+
+      <div class="form-group">
+        <input class="btn btn-primary" type="submit" value="Sign in">
+      </div><br />
+    </fieldset>
+  </form>
+</div>

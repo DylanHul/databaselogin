@@ -4,7 +4,7 @@ const {findUserByName, getUser}  = require('../database/db');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Login Page' });
+  res.redirect('/users/sign-in')
 });
 
 // router.get('/api/v1/*', (req, res, next) => {
