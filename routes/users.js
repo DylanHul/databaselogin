@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const {findUserByName, getUser}  = require('../database/db');
 const { hashPass, compareHash } = require('../bcrypt.js')
+
+const {findUserByName, getUser}  = require('../database/db');
 
 /* GET users listing. */
 router.get('/sign-in', (req, res) => {
