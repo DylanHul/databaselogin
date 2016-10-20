@@ -13,20 +13,21 @@ router.get('/', (req, res) => {
 })
 
 router.post('/sign-in', (req, res) => {
-  let {user_name, user_password} = req.body
-  findUserByName(user_name)
-    .then((logInData) => {
-      const hash = logInData[0].user_password
-      const myPassword = req.body.password
-
-      if (compareHash(myPassword, hash)) {
-        req.session.accountData = { id: logInData[0].id, userName: logInData[0].user_name }
-        let id = req.session.accountData.id
-        res.redirect(`/users/${id}`)
-      } else {
-        res.redirect('/users/sign-in')
-      }
-    })
+  res.redirect('/landing')
+  // let {user_name, user_password} = req.body
+  // findUserByName(user_name)
+    // .then((logInData) => {
+    //   const hash = logInData[0].user_password
+    //   const myPassword = req.body.password
+    //
+    //   if (compareHash(myPassword, hash)) {
+    //     req.session.accountData = { id: logInData[0].id, userName: logInData[0].user_name }
+    //     let id = req.session.accountData.id
+    //     res.redirect(`/users/${id}`)
+    //   } else {
+    //     res.redirect('/users/sign-in')
+    //   }
+    // })
 })
 
 

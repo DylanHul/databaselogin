@@ -8,14 +8,14 @@ router.get('/', function(req, res, next) {
   res.redirect('/users/sign-in')
 });
 
-router.get('/api/v1/users/*', (req, res, next) => {
-
-  if (req.session.usersData) {
-    next()
-  } else {
-    res.redirect('/')
-  }
-})
+// router.get('/api/v1/users/*', (req, res, next) => {
+//
+//   if (req.usersData) {
+//     next()
+//   } else {
+//     res.redirect('/')
+//   }
+// })
 
 router.get('/api/v1/users/:id', (req, res) => {
   let id = req.params.id
